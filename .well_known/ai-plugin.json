@@ -5,17 +5,17 @@
   "description_for_human": "Manage GPG keys, sign, encrypt, decrypt, and verify messages via REST API.",
   "description_for_model": "Provides endpoints for GPG key management and cryptographic operations, including key generation, signing, encryption, decryption, and verification. Supports JWT and API key authentication.",
   "auth": {
-    "type": "service_http",
+    "type": "service_https",
     "instructions": "Use JWT Bearer token or X-API-Key header for authentication.",
     "authorization_type": "Bearer",
     "api_key_header": "X-API-Key"
   },
   "api": {
     "type": "openapi",
-    "url": "http://localhost:8000/openapi.json",
-    "is_user_authenticated": true
+    "url" : "https://gpg-service.onrender.com/openapi.json",
+    "is_user_authenticated" : false
   },
-  "logo_url": "http://localhost:8000/logo.png",
-  "contact_email": "your@email.com",
-  "legal_info_url": "http://localhost:8000/legal"
+  "logo_url": "https://gpg-service.onrender.com/logo.png",
+  "contact_email": "damien.trog@gmail.com",
+  "legal_info_url": "https://gpg-service.onrender.com/privacy"
 }

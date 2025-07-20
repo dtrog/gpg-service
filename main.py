@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from routes import router
+from routes.routes import router
 from models.base import Base  # Import shared Base from models.base
 from sqlalchemy import create_engine
 

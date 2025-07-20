@@ -1,17 +1,14 @@
 import pytest
 from fastapi.testclient import TestClient
-from sqlalchemy import create_engine, select
+from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool  # Added StaticPool import for shared in-memory DB
 import uuid  # Import uuid to generate unique usernames
 import logging
 
 from main import app
-from routes import get_db
+from routes.routes import get_db
 from models.base import Base  # Import Base from the shared base module
-from models.user_credentials import UserCredentials  # Import from correct file
-from models.user_key import UserKey
-
 
 # Global test database setup
 test_engine = None
@@ -28,8 +25,6 @@ def get_test_db_setup():
         )
         TestSessionLocal = sessionmaker(bind=test_engine, autoflush=False, autocommit=False)
         # Import all models before creating tables to ensure they're registered
-        from models.user_credentials import UserCredentials  # Correct import path
-        from models.user_key import UserKey
         Base.metadata.create_all(bind=test_engine)
     return test_engine, TestSessionLocal
 
