@@ -1,0 +1,11 @@
+fastapi
+python-gnupg>=0.4.9
+sqlalchemy>=2.0.0
+pydantic
+uvicorn
+pytest
+passlib
+python-jose
+cryptography
+python-multipart
+httpx

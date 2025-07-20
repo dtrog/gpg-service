@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  gpg-service:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - DATABASE_URL=sqlite:///./user_key_store.db
+

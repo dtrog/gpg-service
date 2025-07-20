@@ -1,0 +1,14 @@
+# Privacy Policy for GPG Service
+
+GPG Service is an open-source web application designed to provide secure cryptographic operations for users. We are committed to protecting your privacy and ensuring the confidentiality of your data. The key privacy features of this service are:
+
+* **No Personal Data Collection:** We do not collect, store, or process any personal or sensitive user information beyond what is strictly necessary for cryptographic operations.
+* **Private Key Protection:** Your private keys are stored only in an encrypted and password-protected format. We never have access to your private keys except transiently in memory to perform requested cryptographic operations (such as signing or decrypting). Private keys are never stored in plaintext and are never accessible to service operators or third parties.
+* **Ephemeral In-Memory Processing:** All cryptographic operations involving private keys are performed in memory and only for the duration of the request. Once the operation is complete, private keys are immediately removed from memory.
+* **No Cookies or Tracking:** The application does not use cookies, analytics, or any tracking mechanisms. Your usage is anonymous and untracked.
+* **No Third-Party Sharing:** We do not share any user data, including cryptographic keys, with third parties. All processing is self-contained within the service.
+* **No Data Retention Beyond Service Needs:** Private keys are stored only in encrypted form and are never retained in a way that allows access by anyone other than the authenticated user. No other user data is retained.
+
+By using GPG Service, you acknowledge and accept this Privacy Policy. The **Data Controller** for this service is **Damien Trog**. Use of this service implies acceptance of these terms.
+
+**Data Controller:** Damien Trog
